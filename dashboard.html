@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitoring BPK</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>BPK</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Data Pemeriksaan</li>
+            <li>Temuan Audit</li>
+            <li>Tindak Lanjut</li>
+            <li>Laporan</li>
+            <li>Pengaturan</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <header>
+            <h1>Dashboard Monitoring BPK</h1>
+            <p>Tahun Anggaran 2025</p>
+        </header>
+
+        <!-- KPI Cards -->
+        <section class="cards">
+            <div class="card">
+                <h3>Total Pemeriksaan</h3>
+                <p>120</p>
+            </div>
+            <div class="card">
+                <h3>Total Temuan</h3>
+                <p>340</p>
+            </div>
+            <div class="card">
+                <h3>Temuan Selesai</h3>
+                <p>250</p>
+            </div>
+            <div class="card">
+                <h3>Belum Ditindaklanjuti</h3>
+                <p>90</p>
+            </div>
+        </section>
+
+        <!-- Charts -->
+        <section class="charts">
+            <div class="chart-box">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Table -->
+        <section class="table-section">
+            <h2>Data Pemeriksaan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Instansi</th>
+                        <th>Jenis</th>
+                        <th>Tahun</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Kementerian A</td>
+                        <td>LK</td>
+                        <td>2025</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Pemda B</td>
+                        <td>Kinerja</td>
+                        <td>2025</td>
+                        <td>Proses</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>BUMN C</td>
+                        <td>PDTT</td>
+                        <td>2025</td>
+                        <td>Belum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
